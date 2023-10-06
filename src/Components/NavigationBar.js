@@ -4,7 +4,7 @@ function NavigationBar() {
   return (
     <nav>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/search">Search Jobs</NavLink>
+
       <NavLink to="/saved">Saved Jobs</NavLink>
     </nav>
   );
