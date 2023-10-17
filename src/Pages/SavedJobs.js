@@ -1,5 +1,10 @@
 function SavedJobs() {
-  return <div>Saved Jobs</div>;
+  return (
+    <div>
+      Saved Jobs
+      <ul></ul>
+    </div>
+  );
 }
 
 export default SavedJobs;
