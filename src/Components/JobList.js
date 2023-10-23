@@ -1,21 +1,13 @@
 import JobCard from "./JobCard";
-import { useState } from "react";
 
-function JobList({ jobs }) {
-  const [savedJobs, setSavedJobs] = useState([]);
-
-  function saveJob(job) {
-    setSavedJobs([...savedJobs, job]);
-  }
-
-  console.log(savedJobs);
+function JobList({ jobs, onSaveJob }) {
   return (
     <div>
-      Job Listings
+      <h2>Job Listings</h2>
       <ul>
         {jobs
           ? jobs.map((job) => {
-              return <JobCard key={job.id} job={job} onSaveJob={saveJob} />;
+              return <JobCard key={job.id} job={job} onSaveJob={onSaveJob} />;
             })
           : ""}
       </ul>

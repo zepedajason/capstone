@@ -1,4 +1,7 @@
-function JobCard({ job, onSaveJob }) {
+import { useContext, useState } from "react";
+import { SavedJobsContext } from "./SavedJobsProvider";
+
+function JobCard({ jobId, job }) {
   const cardStyle = {
     border: "1px solid #ddd",
     borderRadius: "8px",
@@ -7,9 +10,15 @@ function JobCard({ job, onSaveJob }) {
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
     backgroundColor: "#fff",
   };
+  const { saveJob, removeJob, savedJobs } = useContext(SavedJobsContext);
+  const isJobSaved = savedJobs.some((savedJob) => savedJob.id === job.id);
 
-  function handleSaveJob(e) {
-    onSaveJob(job);
+  function handleSaveRemoveJob() {
+    if (isJobSaved) {
+      removeJob(job.id);
+    } else {
+      saveJob(job);
+    }
   }
 
   return (
@@ -29,7 +38,10 @@ function JobCard({ job, onSaveJob }) {
       <p>
         <strong>Salary Maximum:</strong> {job.salary_max}
       </p>
-      <button onClick={handleSaveJob}>Save Job</button>
+
+      <button onClick={handleSaveRemoveJob}>
+        {isJobSaved ? "Remove Job" : "Save Job"}
+      </button>
     </div>
   );
 }

@@ -6,6 +6,8 @@ function NavigationBar() {
       <NavLink to="/">Home</NavLink>
 
       <NavLink to="/saved">Saved Jobs</NavLink>
+
+      <NavLink to="/salaryinfo">Salary Information</NavLink>
     </nav>
   );
 }

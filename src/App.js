@@ -5,24 +5,27 @@ import { BrowserRouter } from "react-router-dom";
 import NavigationBar from "./Components/NavigationBar";
 import AppRoute from "./AppRoute";
 import Footer from "./Components/Footer";
+import { SavedJobsProvider } from "./Components/SavedJobsProvider";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <header>
-          <NavigationBar />
-        </header>
+    <SavedJobsProvider>
+      <div className="App">
+        <BrowserRouter>
+          <header>
+            <NavigationBar />
+          </header>
 
-        <main>
-          <AppRoute />
-        </main>
+          <main>
+            <AppRoute />
+          </main>
 
-        <footer>
-          <Footer />
-        </footer>
-      </BrowserRouter>
-    </div>
+          <footer>
+            <Footer />
+          </footer>
+        </BrowserRouter>
+      </div>
+    </SavedJobsProvider>
   );
 }
 
