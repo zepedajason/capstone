@@ -1,0 +1,30 @@
+.category-selector {
+  margin: 10px; /* Add some margin to the container */
+}
+
+.category-selector label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.category-selector select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  width: 200px;
+}
+
+.category-selector select option {
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+.category-selector select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

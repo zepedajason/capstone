@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import { BrowserRouter } from "react-router-dom";
-import NavigationBar from "./Components/NavigationBar";
+import NavigationBar from "./Components/NavigationBar/NavigationBar.js";
 import AppRoute from "./AppRoute";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer.js";
 import { SavedJobsProvider } from "./Components/SavedJobsProvider";
 
 function App() {

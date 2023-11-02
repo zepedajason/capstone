@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./JobSearchForm.css";
 
 function JobSearchForm({ onSubmit }) {
   const INITIAL_FORMDATA = {
@@ -24,9 +25,12 @@ function JobSearchForm({ onSubmit }) {
 
   return (
     <>
-      <form onSubmit={handleFormSubmit}>
-        <label htmlFor="jobTitle">Job Title: </label>
+      <form onSubmit={handleFormSubmit} className="job-form">
+        <label htmlFor="jobTitle" className="label">
+          Job Title:{" "}
+        </label>
         <input
+          className="input"
           type="text"
           name="jobTitle"
           placeholder="ex: Plumber"
@@ -34,8 +38,11 @@ function JobSearchForm({ onSubmit }) {
           onChange={handleChangeOfFormInput}
         ></input>
 
-        <label htmlFor="location">Location: </label>
+        <label htmlFor="location" className="label">
+          Location:{" "}
+        </label>
         <input
+          className="input"
           type="text"
           name="location"
           placeholder="ex: Los Angeles"
@@ -43,8 +50,11 @@ function JobSearchForm({ onSubmit }) {
           onChange={handleChangeOfFormInput}
         ></input>
         <br />
-        <label htmlFor="salaryMin">Salary Minimum: </label>
+        <label htmlFor="salaryMin" className="label">
+          Salary Minimum:{" "}
+        </label>
         <input
+          className="input"
           type="text"
           name="salaryMin"
           placeholder="Yearly Salary, ex: $40000"
@@ -52,8 +62,11 @@ function JobSearchForm({ onSubmit }) {
           onChange={handleChangeOfFormInput}
         ></input>
         <br />
-        <label htmlFor="salaryMax">Salary Maximum: </label>
+        <label htmlFor="salaryMax" className="label">
+          Salary Maximum:{" "}
+        </label>
         <input
+          className="input"
           type="text"
           name="salaryMax"
           placeholder="Yearly Salary, ex: $80000"
@@ -61,7 +74,9 @@ function JobSearchForm({ onSubmit }) {
           onChange={handleChangeOfFormInput}
         ></input>
         <br />
-        <button type="submit">Search</button>
+        <button type="submit" className="submit-btn">
+          Search
+        </button>
       </form>
     </>
   );
