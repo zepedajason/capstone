@@ -3,8 +3,6 @@ import axios from "axios";
 import JobSearchForm from "../../Components/JobSearchForm/JobSearchForm.js";
 import "./Home.css";
 import JobList from "../../Components/JobList/JobList.js";
-import JobCard from "../../Components/JobCard/JobCard.js";
-import SavedJobs from "../SavedJobs/SavedJobs.js";
 import { SavedJobsContext } from "../../Components/SavedJobsProvider";
 
 function Home() {
@@ -24,7 +22,7 @@ function Home() {
         const queryParams = {
           app_id: appId,
           app_key: appKey,
-          title_only: jobTitle || "web developer",
+          title_only: jobTitle || "",
           where: location || "los angeles",
         };
 
@@ -59,7 +57,7 @@ function Home() {
   function handleSaveJob(job) {
     setSavedJobs((prevSavedJobs) => [...prevSavedJobs, job]);
   }
-
+  console.log(jobList);
   return (
     <>
       <div className="home-page">

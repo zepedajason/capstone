@@ -1,9 +1,4 @@
-.salary-chart {
-  width: 1000px;
-  margin: auto;
-}
-
-h2 {
+.header {
   font-size: 24px;
   font-weight: bold;
   color: #333;
@@ -12,4 +7,9 @@ h2 {
   background-color: #f0f0f0;
   margin-bottom: 20px;
   padding: 10px;
+}
+
+.job-list {
+  display: grid;
+  place-items: center;
 }

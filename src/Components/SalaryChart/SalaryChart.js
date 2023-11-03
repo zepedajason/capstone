@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import SalaryInfo from "../../Pages/SalaryInfo/SalaryInfo";
 import BarChart from "./BarChart";
 import "./SalaryChart.css";
 
@@ -65,8 +64,6 @@ function SalaryChart(props) {
 
   return (
     <div className="salary-container">
-      <h2>Salary Information</h2>
-      <p></p>
       <div>
         <h2>Historical Salary Chart by Month</h2>
         <p>

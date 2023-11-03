@@ -1,49 +1,12 @@
-/* .job-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.job-description {
-  border: 2px solid #333;
-  border-radius: 8px;
-  padding: 16px;
-}
-
-.job-card {
-  border: 2px solid #333;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 800px;
-}
-
-.job-btn {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  border-radius: 6px;
-  margin: 1rem;
-}
-
-.job-link {
-  margin: 1rem;
-} */
-
-.job-container {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 16px;
-  margin: 16px;
-}
-
 .job-card {
   background-color: #fff;
-  padding: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  margin: 2rem;
+  max-width: 1000px;
+  min-width: 100px;
 }
 
 .job-link {
@@ -63,6 +26,9 @@ h4 {
 
 .job-description {
   margin-top: 12px;
+  padding: 1em;
+  border: 3px solid #ccc;
+  border-radius: 10px;
 }
 
 .job-salary {

@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import BarChart from "../../Components/SalaryChart/BarChart";
-import JobCategoryList from "../../Components/SalaryChart/SalaryChart";
 import SalaryChart from "../../Components/SalaryChart/SalaryChart";
 import "./SalaryInfo.css";
 function SalaryInfo() {
