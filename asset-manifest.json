@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.12c669b8.css",
-    "main.js": "/capstone/static/js/main.d014b36c.js",
-    "static/js/787.28cb0dcd.chunk.js": "/capstone/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/capstone/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/capstone/index.html",
-    "main.12c669b8.css.map": "/capstone/static/css/main.12c669b8.css.map",
-    "main.d014b36c.js.map": "/capstone/static/js/main.d014b36c.js.map",
-    "787.28cb0dcd.chunk.js.map": "/capstone/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/jobfind/static/css/main.12c669b8.css",
+    "main.js": "/jobfind/static/js/main.86b4bfe6.js",
+    "static/js/787.28cb0dcd.chunk.js": "/jobfind/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/jobfind/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/jobfind/index.html",
+    "main.12c669b8.css.map": "/jobfind/static/css/main.12c669b8.css.map",
+    "main.86b4bfe6.js.map": "/jobfind/static/js/main.86b4bfe6.js.map",
+    "787.28cb0dcd.chunk.js.map": "/jobfind/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12c669b8.css",
-    "static/js/main.d014b36c.js"
+    "static/js/main.86b4bfe6.js"
   ]
 }
