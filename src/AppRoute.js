@@ -7,6 +7,7 @@ function AppRoute() {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
+      <Route path="/jobfind" element={<Home />}></Route>
       <Route path="/saved" element={<SavedJobs />}></Route>
       <Route path="/salaryinfo" element={<SalaryInfo />}></Route>
     </Routes>
