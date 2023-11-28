@@ -3,7 +3,7 @@ import axios from "axios";
 import JobSearchForm from "../../Components/JobSearchForm/JobSearchForm.js";
 import "./Home.css";
 import JobList from "../../Components/JobList/JobList.js";
-import { SavedJobsContext } from "../../Components/SavedJobsProvider";
+import { SavedJobsContext } from "../../Components/SavedJobsProvider.js";
 
 function Home() {
   //root url - https://api.adzuna.com/v1/api
@@ -41,7 +41,11 @@ function Home() {
         const apiUrl = `https://api.adzuna.com/v1/api/jobs/us/search/1?${queryString}`;
 
         const res = await axios.get(apiUrl);
-        setJobList(res.data.results);
+        if (res && res.data && res.data.results) {
+          setJobList(res.data.results);
+        } else {
+          console.error("Invalid API response:", res);
+        }
       } catch (error) {
         console.error("Error receiving data", error);
       }
@@ -57,14 +61,15 @@ function Home() {
   function handleSaveJob(job) {
     setSavedJobs((prevSavedJobs) => [...prevSavedJobs, job]);
   }
-  console.log(jobList);
+
   return (
     <>
       <div className="home-page">
-        <div>
+        <div className="left-panel">
           <JobSearchForm onSubmit={handleFormData} />
         </div>
-        <div>
+        <div className="divider"></div>
+        <div className="right-panel">
           <JobList jobs={jobList} onSaveJob={handleSaveJob} />
         </div>
       </div>

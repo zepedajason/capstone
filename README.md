@@ -77,3 +77,4 @@ API Link - https://developer.adzuna.com/
 - Standard user flow is as follows, Home page will render initially, you can input fields to search for any jobs you like and include filters for location and salaries, you can save any jobs you are interested in, and remove when no longer necessary.
 - The API is Adzuna, api version: 1, software version: 2013111200
 - Website is built using React, JavaScript, JSX for page content, and CSS for styling
+- Testing was implemented in the main 3 pages of the website, there is testing to ensure all main components and pages render without crashing.

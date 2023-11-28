@@ -57,7 +57,7 @@ function JobSearchForm({ onSubmit }) {
           className="input"
           type="text"
           name="salaryMin"
-          placeholder="Yearly Salary, ex: $40000"
+          placeholder="Yearly Salary, ex:40000"
           value={formData.salaryMin}
           onChange={handleChangeOfFormInput}
         ></input>
@@ -69,7 +69,7 @@ function JobSearchForm({ onSubmit }) {
           className="input"
           type="text"
           name="salaryMax"
-          placeholder="Yearly Salary, ex: $80000"
+          placeholder="Yearly Salary, ex:80000"
           value={formData.salaryMax}
           onChange={handleChangeOfFormInput}
         ></input>

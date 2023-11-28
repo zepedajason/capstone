@@ -1,6 +1,10 @@
 import "./JobCard.css";
 
 function JobCard({ isSaved, job, onClickHandle }) {
+  if (!job) {
+    return null; // or you can return a placeholder, loading indicator, etc.
+  }
+
   return (
     <div className="job-card">
       <a href={job.redirect_url} className="job-link">

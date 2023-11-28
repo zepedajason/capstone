@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import SalaryChart from "../../Components/SalaryChart/SalaryChart";
+import SalaryChart from "../../Components/SalaryChart/SalaryChart.js";
 import "./SalaryInfo.css";
 function SalaryInfo() {
   const appId = "4c2119b3";
   const appKey = "b2c18430a670fef0fe602e747766841e";
   const [categoryList, setCategoryList] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("it-jobs");
 
   useEffect(() => {
     async function getJobData() {

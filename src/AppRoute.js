@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import SavedJobs from "./Pages/SavedJobs/SavedJobs";
-import SalaryInfo from "./Pages/SalaryInfo/SalaryInfo";
+import Home from "./Pages/Home/Home.js";
+import SavedJobs from "./Pages/SavedJobs/SavedJobs.js";
+import SalaryInfo from "./Pages/SalaryInfo/SalaryInfo.js";
 
 function AppRoute() {
   return (

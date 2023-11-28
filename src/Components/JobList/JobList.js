@@ -1,6 +1,6 @@
-import JobCard from "../JobCard/JobCard";
+import JobCard from "../JobCard/JobCard.js";
 import { useContext } from "react";
-import { SavedJobsContext } from "../SavedJobsProvider";
+import { SavedJobsContext } from "../SavedJobsProvider.js";
 import "./JobList.css";
 
 function JobList({ jobs }) {

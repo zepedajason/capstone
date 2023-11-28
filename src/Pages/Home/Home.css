@@ -1,1 +1,18 @@
+.home-page {
+  display: flex;
+}
 
+.left-panel {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.divider {
+  width: 3px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.right-panel {
+  flex: 2;
+}

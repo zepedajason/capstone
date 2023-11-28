@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import BarChart from "./BarChart";
+import BarChart from "./BarChart.js";
 import "./SalaryChart.css";
 
 function SalaryChart(props) {
@@ -12,15 +12,17 @@ function SalaryChart(props) {
 
   function formatCategoryLabel(category) {
     // Split the category string by hyphens and capitalize the first letter of each part
-    const parts = category.split("-");
-    const formattedParts = parts.map(
-      (part) => part.charAt(0).toUpperCase() + part.slice(1)
-    );
+    if (category) {
+      const parts = category.split("-");
+      const formattedParts = parts.map(
+        (part) => part.charAt(0).toUpperCase() + part.slice(1)
+      );
 
-    // Join the formatted parts with a space to create the final label
-    const formattedLabel = formattedParts.join(" ");
+      // Join the formatted parts with a space to create the final label
+      const formattedLabel = formattedParts.join(" ");
 
-    return formattedLabel;
+      return formattedLabel;
+    }
   }
   const chartLabel = formatCategoryLabel(tag);
 
@@ -28,10 +30,9 @@ function SalaryChart(props) {
     async function getJobData() {
       try {
         let res = await axios.get(
-          `https://api.adzuna.com/v1/api/jobs/us/history?app_id=${appId}&app_key=${appKey}&category=${tag}&months=12`
+          `https://api.adzuna.com/v1/api/jobs/us/history?app_id=4c2119b3&app_key=b2c18430a670fef0fe602e747766841e&category=${tag}&months=12`
         );
         const receivedData = res.data.month;
-        console.log(receivedData);
         const salaryDataArray = Object.keys(receivedData).map((key) => ({
           date: key,
           salary: receivedData[key],
