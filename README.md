@@ -73,7 +73,7 @@ API Link - https://developer.adzuna.com/
 
 - Title of the website is JobFind, URL: https://zepedajason.github.io/jobfind/
 - The website is built with 3 pages, the Home page to search for jobs, a saved jobs page to look at saved jobs, and a salary information page to gain salary history information.
-- The features implenented are the ability to be able to search for a job filtered by location, title, salary minimum and salary maximum. You also have the ability to save a job or remove a job, there is also a feature to look at salary history graphs based off job categories.
+- The features implemented are the ability to be able to search for a job filtered by location, title, salary minimum and salary maximum. You also have the ability to save a job or remove a job, there is also a feature to look at salary history graphs based off job categories.
 - Standard user flow is as follows, Home page will render initially, you can input fields to search for any jobs you like and include filters for location and salaries, you can save any jobs you are interested in, and remove when no longer necessary.
 - The API is Adzuna, api version: 1, software version: 2013111200
 - Website is built using React, JavaScript, JSX for page content, and CSS for styling
